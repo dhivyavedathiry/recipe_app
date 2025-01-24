@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin-dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Manage Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="userList">
+          <!-- Users will be dynamically loaded here -->
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Manage Recipes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Recipe ID</th>
+            <th>Title</th>
+            <th>Submitted By</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="recipeList">
+          <!-- Recipes will be dynamically loaded here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>
